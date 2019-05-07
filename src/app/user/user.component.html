@@ -1,0 +1,4 @@
+<p [ngClass]="{'green': userDetail.position == 'junior', 
+'yellow': userDetail.position == 'middle'}">{{userDetail.name}}
+<button (click)="deleteUser(userId)">Delete</button>
+</p>
