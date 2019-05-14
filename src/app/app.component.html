@@ -19,3 +19,8 @@
 <div *ngFor="let user of listUser; let i = index">
   <app-user [userDetail]="user" [userId]="i" (deleteUserId)="deleteUserFromArray($event)"></app-user>
 </div>
+
+<div>
+  {{ date | date : "MM/dd/yy" }}
+  {{ listUser | json }}
+</div>

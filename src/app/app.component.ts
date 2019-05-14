@@ -26,6 +26,12 @@ export class AppComponent {
     name: 'john',
     position: 'senior'
   }];
+
+  date = new Date();
+
+  ngOnInit() {
+    console.log(this.listUser);
+  }
   
 
   onCheck() {

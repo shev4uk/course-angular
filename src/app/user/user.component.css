@@ -4,3 +4,7 @@
 .yellow {
     color: yellow;
 }
+
+:host {
+    font-size: 24px;
+}
