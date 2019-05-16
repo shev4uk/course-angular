@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course';
+  isShow = true;
+
+  showElement() {
+    this.isShow = !this.isShow;
+  }
 }
