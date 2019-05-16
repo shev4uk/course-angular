@@ -31,3 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 lesson1-demo  - introduction in angular, create new component user
 
 lesson3-components - data-binding, input output in components
+
+lesson-directive - directive, pipes
