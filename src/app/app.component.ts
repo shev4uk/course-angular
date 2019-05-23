@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'course';
+  title = '';
+
+  gender = ['Male', 'Female'];
+
+  user = {
+    email: '',
+    password: '',
+    gender: ''
+  }
+
+  name = new FormControl('gdgd', [Validators.required, Validators.email
+  ]);
+
+  getValue() {
+    console.log(this.title);
+  }
+
+  onSubmit() {
+    console.log(this.user);
+  }
 }
