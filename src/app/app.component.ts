@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
+import { Post } from './post';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course';
+  allPost;
+  constructor(
+    private data: DataService
+  ) {
+
+  }
+
+  ngOnInit() {
+    this.data.getPost().subscribe(
+      (posts: Post[]) => {
+        console.log(posts);
+        this.allPost = posts;
+      }
+    );
+  }
 }
